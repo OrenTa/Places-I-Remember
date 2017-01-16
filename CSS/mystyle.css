@@ -1,0 +1,84 @@
+/*the overall content will be controlled with the container class */
+.container {
+	width: 80%;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+/* row will be used as a flex container */
+/* row contains several columns as described below */
+.row {
+	width: 100%;
+	margin: 0 auto;
+    display: flex; 
+    /* border-style: dotted; */
+    align:center;
+}
+
+/* used for full lines */
+.col-full {
+	width:100%;
+}
+
+/* used for columns taking half the horizontal space */
+.col-half {
+	width: 50%;
+	margin:0 auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.col-third {
+	width: 33.3%;
+}
+
+.icon {
+	width: 70px;
+	border-radius: 50%;
+	padding: 10px 0px;
+}
+
+html, h1, h2, h3, h4, div {
+	font-family: 'Overpass', sans-serif;
+	color: #71757a;
+}
+
+
+.title {
+	/*color: #2d3c49;*/
+	color: #71757a;
+	text-align:right;
+	margin-bottom: 0px;
+}
+
+#ttitle {
+	margin-bottom: 0px;
+}
+
+.main_image{
+	max-width: 100%;
+    height: auto;
+   	margin:0 auto;
+}
+
+.project_image{
+	box-sizing: border-box;
+	width: 100%;
+	height: auto;
+	padding:5px;
+}
+
+.project {
+	text-align: center;
+}
+
+hr {
+	border:0;
+	height: 3px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+h2:hover{
+	background-color: lightblue;
+}
