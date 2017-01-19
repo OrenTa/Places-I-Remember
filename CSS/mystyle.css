@@ -1,8 +1,6 @@
 /*the overall content will be controlled with the container class */
 
 .container {
-	width: 80%;
-	max-width: 900px;
 	margin: 0 auto;
 }
 
@@ -31,6 +29,10 @@
 
 .col-third {
 	width: 33.3%;
+}
+
+.col-two-thirds {
+	width: 66.6%;
 }
 
 .icon {
@@ -66,7 +68,7 @@ html, h1, h2, h3, h4, div {
 	box-sizing: border-box;
 	width: 100%;
 	height: auto;
-	padding:5px;
+	padding:0px;
 }
 
 .project {
@@ -82,4 +84,88 @@ hr {
 
 h2:hover{
 	background-color: lightblue;
+}
+
+.second-header {
+	margin-bottom: 0px;
+	color:#7d97ad;
+}
+
+.short {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.left {
+	margin-left: 0px;
+	padding-left: 0px;
+	padding-right:10px;
+}
+
+.right {
+	margin-right: 0px;
+	padding-right: 0px;
+	padding-left:10px;
+}
+
+.center {
+	padding-left:5px;
+	padding-right:5px;
+}
+
+@media (min-width: 926px) {
+  .container{
+  width: 900px;
+  }
+}
+
+@media (max-width: 925px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  .container{
+  width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 1.2em;
+  	}
+
+  h2{
+    font-size: 1.1em;
+   }
+
+  .icon {
+	width: 50px;
+	border-radius: 50%;
+	padding: 5px 0px;
+	}
+}
+
+@media (max-width: 460px){
+  
+  	header {
+  		flex-direction: column;
+  	}
+
+  	.title {
+  		width:100%;
+  		text-align: center;
+  	}
+
+  	.icon {
+   		display: block;
+   	 	margin-left: auto;
+    	margin-right: auto;
+ 	}
+
+ 	.icon_place {
+ 		width: 100%;
+ 	}
+
+ 	.project {
+ 		flex-direction: column;
+ 	}
 }

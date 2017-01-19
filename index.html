@@ -19,10 +19,10 @@
 <body>
 	<div class="container">
 		<header class="row">
-			<div class="col-half icon_place">
+			<div class="col-third icon_place">
 				<img class="icon" src="images/Oren.JPG" alt="icon of Oren">
 			</div>
-			<div class="col-half title">
+			<div class="col-two-thirds title">
 				<h1 id="ttitle"> PLACES I'VE BEEN TO</h1>
 					By Oren Tayar 
 			</div>
@@ -30,48 +30,37 @@
 		<hr>
 		<div class="row">
 			<div class="col-full">
-				<img src="images/Slovenia_1200.jpg" class="main_image" alt="Image of a Slovenia">
-				<h2> Featured work </h2>
+				<picture class="main_image">
+					<source media="(max-width: 700px)" srcset="images/Slovenia_cropped_large.jpg" >
+   					<source media="(max-width: 400px)" srcset="images/Slovenia_cropped_small.jpg" >
+   					<source srcset="images/Slovenia_900.jpg" >
+   					<img src="images/Slovenia_900.jpg" alt="Image of a Slovenia" class="main_image">
+				</picture>
+
+				<h2 class="second-header"> Featured Trips </h2>
 			</div>
 		</div>
 		
 		<div class="row project">
 			<div class="col-third">
-				<img src="images/Greece_1200.jpg" class="project_image" alt="picture of Greece">
-				<h2>Greece 2013</h2>
-				<p> Greece </p>
+				<img id="greece" src="images/Greece_1200.jpg" class="project_image left" alt="picture of Greece">
+				<h2 class="short">Greece 2013</h2>
+				Greece
 			</div>
 			<div class="col-third">
-				<img src="images/Germany.jpg" class="project_image" alt="picture of something">
-				<h2>Germany 2014</h2>
-				<p> Black Forest </p>
+				<img src="images/Germany_1200.jpg" class="project_image center" alt="picture of something">
+				<h2 class="short">Germany 2014</h2>
+				Black Forest
 			</div>
 			<div class="col-third">
-				<img src="images/Eilat.jpg" class="project_image" alt="picture of something">
-				<h2>Eilat 2015</h2>
-				<p> Desert Tour </p>
+				<img src="images/Eilat_1200.jpg" class="project_image right" alt="picture of something">
+				<h2 class="short">Eilat 2015</h2>
+				Desert Tour
 			</div>
 		</div>		
 		<div class="row project">
 			    <p></p>
 		</div>
-		<div class="row project">
-			<div class="col-third">
-				<img src="images/Slovenia.jpg" class="project_image" alt="picture of something">
-				<h2>One</h2>
-				<p> Slovenia </p>
-			</div>
-			<div class="col-third">
-				<img src="images/Slovenia.jpg" class="project_image" alt="picture of something">
-				<h2>Two</h2>
-				<p> Italy </p>
-			</div>
-			<div class="col-third">
-				<img src="images/Slovenia.jpg" class="project_image" alt="picture of something">
-				<h2>Three</h2>
-				<p> France </p>
-			</div>
-		</div>					
 	</div>
 </body>
 </html>
