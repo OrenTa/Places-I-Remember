@@ -1,4 +1,4 @@
-<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+﻿<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <!--	 		Project By Oren Tayar 						-->
 <!-- 	Submitted as part of Udacity Full Stack Nanodegree 	-->
@@ -18,6 +18,7 @@
 </head>
 <body>
 	<div class="container">
+		<!-- The header of the page -->
 		<header class="row">
 			<div class="col-third icon_place">
 				<img class="icon" src="images/Oren.JPG" alt="icon of Oren">
@@ -28,12 +29,14 @@
 			</div>
 		</header>
 		<hr>
+		
+		<!-- The main picture on the page -->
 		<div class="row">
 			<div class="col-full">
 				<picture class="main_image">
-					<source media="(max-width: 700px)" srcset="images/Slovenia_cropped_large.jpg" >
-   					<source media="(max-width: 400px)" srcset="images/Slovenia_cropped_small.jpg" >
-   					<source srcset="images/Slovenia_900.jpg" >
+					<source media="(min-width: 701px)" srcset="images/Slovenia_900.jpg" >
+					<source media="(min-width: 401px)" srcset="images/Slovenia_700.jpg" >
+   					<source srcset="images/Slovenia_cropped_small.jpg 1x, images/Slovenia_cropped_large.jpg 2x" >
    					<img src="images/Slovenia_900.jpg" alt="Image of a Slovenia" class="main_image">
 				</picture>
 
@@ -41,9 +44,10 @@
 			</div>
 		</div>
 		
+		<!-- The "portfolio" or in my case "places I've been to" -->
 		<div class="row project">
 			<div class="col-third">
-				<img id="greece" src="images/Greece_1200.jpg" class="project_image left" alt="picture of Greece">
+				<img src="images/Greece_1200.jpg" class="project_image left" alt="picture of Greece">
 				<h2 class="short">Greece 2013</h2>
 				Greece
 			</div>
@@ -59,7 +63,7 @@
 			</div>
 		</div>		
 		<div class="row project">
-			    <p></p>
+			<p></p>
 		</div>
 	</div>
 </body>
